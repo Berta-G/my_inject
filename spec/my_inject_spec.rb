@@ -14,6 +14,13 @@ describe "my_inject" do
 		expect([1,2,3].my_inject{|t, n| t + n}).to eq(6)
 	end
 
+context "total is initialized" do 
+	it "can initialize the value if the argument is passed" do
+		expect([1,2,3].my_inject(10) {|t, n| t + n }).to eq(16)
+	end
+end
+
+
 
 
 end
